@@ -1,18 +1,5 @@
   const CoinHive = require('./src');
-const express = require('express');
-const app = express();
 
-var state = false;
-var proc = '';
-var coin = 'bcn';
-var count = 0;
-
-app.listen(process.env.PORT || 8080, ()=>{
-  console.log('Example app listening on port 3000!');
-});
-app.get('/status', function (req, res) {
-  	res.send('state: '+state);
-});
   // Create miner
   
 (async () => {
