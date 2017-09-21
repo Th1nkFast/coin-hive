@@ -21,7 +21,7 @@ class Puppeteer extends EventEmitter {
     if (this.browser) {
       return this.browser;
     }
-    this.browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    this.browser = await puppeteer.launch({ args: ['--no-sandbox','--headless','--disable-gpu'] });
     return this.browser;
   }
 
